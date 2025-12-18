@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Home</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="Jude" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+        <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+        <li class="navbar__btn"><a href="contact.html" class="button">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="contact-hero">
+    <div class="contact-hero__container">
+      <h1>Let's Connect</h1>
+      <p>
+        Have a project in mind? Want to collaborate? Or just want to say hi? 
+        I'd love to hear from you!
+      </p>
+      <div class="hero-icons">
+        <div class="hero-icon">
+          <i class="fas fa-code"></i>
+          <span>Web Development</span>
+        </div>
+        <div class="hero-icon">
+          <i class="fas fa-handshake"></i>
+          <span>Collaboration</span>
+        </div>
+        <div class="hero-icon">
+          <i class="fas fa-lightbulb"></i>
+          <span>New Ideas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Contact Section -->
+  <div class="contact-section">
+    <div class="contact-section__container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Choose your preferred way to reach out</p>
+      
+      <div class="quick-contact-grid">
+        <a href="mailto:judesantos240@gmail.com" class="quick-contact-card">
+          <div class="quick-contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Me</h3>
+          <p>judesantos240@gmail.com</p>
+          <span class="quick-contact-badge">Response within 24hrs</span>
+        </a>
+
+        <a href="tel:+12065843405" class="quick-contact-card">
+          <div class="quick-contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Call Me</h3>
+          <p>(206) 584-3405</p>
+          <span class="quick-contact-badge">Available 9AM-6PM PST</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jude-santos-329b35326/" target="_blank" class="quick-contact-card">
+          <div class="quick-contact-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>Connect professionally</p>
+          <span class="quick-contact-badge">Let's network!</span>
+        </a>
+
+        <a href="https://github.com/ClasherOfRealms?tab=repositories" target="_blank" class="quick-contact-card">
+          <div class="quick-contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>Check out my code</p>
+          <span class="quick-contact-badge">Open to contributions</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Section -->
+  <div class="contact-section contact-section-alt">
+    <div class="contact-section__container">
+      <div class="contact-form-wrapper">
+        <div class="contact-form-left">
+          <h2 class="section-title">Send Me a Message</h2>
+          <p class="form-description">
+            Fill out the form and I'll get back to you as soon as possible. 
+            Whether it's about a project, collaboration, or just to chat about tech!
+          </p>
+          
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Seattle, Washington</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Response Time</h4>
+                <p>Usually within 24 hours</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h4>Open To</h4>
+                <p>Freelance, Internships, Projects</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h4>Follow Me</h4>
+            <div class="social-icons-contact">
+              <a href="https://www.linkedin.com/in/jude-santos-329b35326/" target="_blank" class="social-icon-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/ClasherOfRealms?tab=repositories" target="_blank" class="social-icon-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/jude_santos82/" target="_blank" class="social-icon-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-right">
+          <form name="submit-to-google-sheet" class="contact-form">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i> Your Name *
+              </label>
+              <input type="text" id="name" name="Name" placeholder="John Doe" required/>
+            </div>
+
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i> Your Email *
+              </label>
+              <input type="email" id="email" name="Email" placeholder="john@example.com" required/>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">
+                <i class="fas fa-phone"></i> Phone Number (Optional)
+              </label>
+              <input type="tel" id="phone" name="Phone" placeholder="(206) 123-4567"/>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">
+                <i class="fas fa-tag"></i> Subject *
+              </label>
+              <select id="subject" name="Subject" required>
+                <option value="">Select a subject...</option>
+                <option value="project">Project Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="internship">Internship Opportunity</option>
+                <option value="freelance">Freelance Work</option>
+                <option value="question">General Question</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">
+                <i class="fas fa-comment"></i> Your Message *
+              </label>
+              <textarea id="message" name="Message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-preference">
+                <i class="fas fa-bell"></i> Preferred Contact Method
+              </label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="ContactPreference" value="email" checked/>
+                  <span>Email</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="ContactPreference" value="phone"/>
+                  <span>Phone</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="ContactPreference" value="either"/>
+                  <span>Either</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            
+            <span id="form-msg" class="form-message"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download Resume Section -->
+  <div class="contact-section">
+    <div class="contact-section__container">
+      <div class="resume-section">
+        <div class="resume-icon">
+          <i class="fas fa-file-download"></i>
+        </div>
+        <div class="resume-content">
+          <h2>Want to Know More?</h2>
+          <p>Download my resume to see my complete experience, skills, and projects.</p>
+        </div>
+        <a href="Jude_Santos_Resume.pdf" download class="resume-download-btn">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <p class="website__right">All images can be found in source code of this website.<br>
+    © Jude Santos 2024
+  </p>
+
+  <script src="app.js"></script>
+</body>
+</html>

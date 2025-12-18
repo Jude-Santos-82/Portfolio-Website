@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Home</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+        <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+        <li class="navbar__btn"><a href="contact.html" class="button">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>My name is</h1>
+        <h2>Jude Santos</h2>
+        <p>Explore this page</p>
+        <a href="#projects" class="main__btn">My Work</a>
+        <a href="#about" class="main__btn">About Me</a>
+        <a href="#contact" class="main__btn">Contact Me</a>
+      </div>
+      <div class="main__img--container">
+        <img src="me.png" alt="pic" id="main__img"/>
+      </div>
+    </div>
+  </div>
+
+    <!-- Projects Section -->
+  <div class="projects" id="projects">
+    <h1>Explore my work</h1>
+    <div class="projects__container">
+      <div class="projects__card projects__card-game">
+        <h2>Card Game</h2>
+        <p>Are you a master of chance?</p>
+        <a href="https://students.washington.edu/jude0317/CardSuitPicker/PLAY" class="projects__btn">PLAY</a>
+      </div>
+      <div class="projects__card projects__card-git">
+        <h2>Git Profile</h2>
+        <p>Browse my Git projects!</p>
+        <a href="https://github.com/ClasherOfRealms?tab=repositories" class="projects__btn">GO</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <div class="about__container">
+      <div class="about__img--container">
+        <img src="mountain.jpg" alt="pic" id="about__img"/>
+      </div>
+      <div class="about__content">
+        <h1>About Me!</h1>
+        <h2>
+          My name is Jude Santos, a Computer Science student at the University of Washington, class of 2027.
+          I have had a passion for computer science since taking AP Computer Science A my junior
+          year of high school. I love the difference in thinking and communication when talking
+          to a computer vs a human. Click here to learn more about me, in and out of school!
+        </h2>
+        <a href="about.html" class="about__btn">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact" id="contact">
+    <div class="contact__container">
+      <div class="contact__left">
+        <h1 class="subtitle">Contact Me</h1>
+        <p><i class="fa-regular fa-paper-plane"></i> judesantos240@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> (206)-584-3405</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/jude-santos-329b35326/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ClasherOfRealms?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/jude_santos82/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="Jude_Santos_Resume.pdf" download class="resume_btn">Download Resume</a>
+      </div>
+      <div class="contact__right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <p class="website__right">All images can be found in source code of this website.<br>
+    © Jude Santos 2024
+  </p>
+
+  <script src="app.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyxNsU5Iw27h4-H7oN4BfN_LqXkZS0eRxH7KwTT0_DQIhkbxzonpUa86Cf8LDQMjDgQvA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent!";
+          setTimeout(() => { msg.innerHTML = ""; }, 5000);
+          form.reset();
+          location.reload();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+</body>
+</html>

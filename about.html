@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Jude Santos</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Home</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
+        <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
+        <li class="navbar__btn"><a href="contact.html" class="button">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="about-hero">
+    <div class="about-hero__container">
+      <h1>About Me</h1>
+      <p>
+        I'm a passionate Computer Science student at the University of Washington, 
+        dedicated to exploring the endless possibilities of technology and innovation.
+      </p>
+    </div>
+  </div>
+
+  <!-- My Story Section -->
+  <div class="about-section">
+    <div class="about-section__container">
+      <div class="story-content">
+        <h2 class="section-title">My Story</h2>
+        <div class="section-content">
+          <p>
+            My journey into computer science began during my junior year of high school when I took 
+            AP Computer Science A. What captivated me most was the unique way of thinking required 
+            when programming—the precision, logic, and creativity needed to communicate with computers 
+            compared to human interaction.
+          </p>
+          <p>
+            Now as a Computer Science student at the University of Washington (Class of 2027), I'm 
+            constantly expanding my knowledge and skills. I love tackling challenging problems, 
+            building innovative projects, and exploring new technologies. Each day brings new 
+            opportunities to learn and grow in this ever-evolving field.
+          </p>
+          <p>
+            Beyond coding, I believe in the power of technology to make a positive impact on the world. 
+            Whether it's creating engaging user experiences, developing efficient algorithms, or 
+            collaborating with others, I'm driven by the desire to build meaningful solutions.
+          </p>
+        </div>
+      </div>
+      <div class="story-image">
+        <img src="full-photo.jpg" alt="Jude Santos full photo"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education & Skills Section -->
+  <div class="about-section about-section-alt">
+    <div class="about-section__container">
+      <div>
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>University of Washington</h3>
+            <div class="year">2023 - 2027</div>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Focused on software development, algorithms, and data structures.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>High School</h3>
+            <div class="year">Graduated 2023</div>
+            <p>AP Computer Science A - My introduction to programming</p>
+            <p>Developed fundamental skills in Java and object-oriented programming.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fab fa-java"></i>
+            <p>Java</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <p>HTML/CSS</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-git-alt"></i>
+            <p>Git</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <p>Databases</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo Gallery Section -->
+  <div class="about-section gallery-section">
+    <div class="gallery-header">
+      <h2 class="section-title">Gallery</h2>
+      <p class="gallery-description">
+        A collection of moments from my journey in computer science and beyond.
+      </p>
+    </div>
+    
+    <div class="carousel-wrapper">
+      <!-- Carousel 1 -->
+      <div class="photo-carousel">
+        <button class="carousel-btn carousel-btn-prev" data-carousel="1">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="carousel-container" data-carousel="1">
+          <div class="carousel-slide active">
+            <img src="gallery1.jpg" alt="Gallery image 1"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery2.jpg" alt="Gallery image 2"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery3.jpg" alt="Gallery image 3"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery4.jpg" alt="Gallery image 4"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery5.jpg" alt="Gallery image 5"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery6.jpg" alt="Gallery image 6"/>
+          </div>
+        </div>
+        
+        <button class="carousel-btn carousel-btn-next" data-carousel="1">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="carousel-caption" data-carousel="1">
+          Caption for image 1
+        </div>
+        
+        <div class="carousel-indicators" data-carousel="1">
+          <span class="indicator active" data-slide="0"></span>
+          <span class="indicator" data-slide="1"></span>
+          <span class="indicator" data-slide="2"></span>
+          <span class="indicator" data-slide="3"></span>
+          <span class="indicator" data-slide="4"></span>
+          <span class="indicator" data-slide="5"></span>
+        </div>
+      </div>
+
+      <!-- Carousel 2 -->
+      <div class="photo-carousel">
+        <button class="carousel-btn carousel-btn-prev" data-carousel="2">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="carousel-container" data-carousel="2">
+          <div class="carousel-slide active">
+            <img src="gallery7.jpg" alt="Gallery image 7"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery8.jpg" alt="Gallery image 8"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery9.jpg" alt="Gallery image 9"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery10.jpg" alt="Gallery image 10"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery11.jpg" alt="Gallery image 11"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery12.jpg" alt="Gallery image 12"/>
+          </div>
+        </div>
+        
+        <button class="carousel-btn carousel-btn-next" data-carousel="2">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="carousel-caption" data-carousel="2">
+          Caption for image 7
+        </div>
+        
+        <div class="carousel-indicators" data-carousel="2">
+          <span class="indicator active" data-slide="0"></span>
+          <span class="indicator" data-slide="1"></span>
+          <span class="indicator" data-slide="2"></span>
+          <span class="indicator" data-slide="3"></span>
+          <span class="indicator" data-slide="4"></span>
+          <span class="indicator" data-slide="5"></span>
+        </div>
+      </div>
+
+      <!-- Carousel 3 -->
+      <div class="photo-carousel">
+        <button class="carousel-btn carousel-btn-prev" data-carousel="3">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="carousel-container" data-carousel="3">
+          <div class="carousel-slide active">
+            <img src="gallery13.jpg" alt="Gallery image 13"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery14.jpg" alt="Gallery image 14"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery15.jpg" alt="Gallery image 15"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery16.jpg" alt="Gallery image 16"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery17.jpg" alt="Gallery image 17"/>
+          </div>
+          <div class="carousel-slide">
+            <img src="gallery18.jpg" alt="Gallery image 18"/>
+          </div>
+        </div>
+        
+        <button class="carousel-btn carousel-btn-next" data-carousel="3">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="carousel-caption" data-carousel="3">
+          Caption for image 13
+        </div>
+        
+        <div class="carousel-indicators" data-carousel="3">
+          <span class="indicator active" data-slide="0"></span>
+          <span class="indicator" data-slide="1"></span>
+          <span class="indicator" data-slide="2"></span>
+          <span class="indicator" data-slide="3"></span>
+          <span class="indicator" data-slide="4"></span>
+          <span class="indicator" data-slide="5"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interests Section -->
+  <div class="about-section about-section-alt">
+    <div class="about-section__container about-section__single">
+      <div class="interests-centered">
+        <h2 class="section-title">Beyond Coding</h2>
+        <div class="section-content">
+          <p>
+            When I'm not coding, I enjoy exploring various interests that keep me balanced and inspired. 
+            These activities help me maintain creativity and bring fresh perspectives to my technical work.
+          </p>
+          <div class="interests-list">
+            <span class="interest-tag"><i class="fas fa-mountain"></i> Hiking</span>
+            <span class="interest-tag"><i class="fas fa-gamepad"></i> Gaming</span>
+            <span class="interest-tag"><i class="fas fa-book"></i> Reading Tech Blogs</span>
+            <span class="interest-tag"><i class="fas fa-users"></i> Collaborating</span>
+            <span class="interest-tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+            <span class="interest-tag"><i class="fas fa-code"></i> Building Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="about-section about-cta">
+    <div class="about-section__container about-section__single">
+      <div>
+        <h2 class="section-title">Let's Connect!</h2>
+        <div class="section-content">
+          <p class="cta-text">
+            I'm always excited to connect with fellow developers, discuss new ideas, or explore 
+            potential collaboration opportunities. Feel free to reach out!
+          </p>
+          <a href="contact.html" class="main__btn">Get In Touch</a>
+          <a href="projects.html" class="main__btn cta-btn-margin">View My Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <p class="website__right">All images can be found in source code of this website.<br>
+    © Jude Santos 2024
+  </p>
+
+  <script src="app.js"></script>
+</body>
+</html>
