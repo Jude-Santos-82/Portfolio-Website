@@ -11,14 +11,14 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="index.html" id="navbar__logo">Home</a>
+      <a href="Jude" id="navbar__logo">Home</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="Jude" class="navbar__links">Home</a></li>
         <li class="navbar__item"><a href="projects.html" class="navbar__links">Projects</a></li>
         <li class="navbar__item"><a href="about.html" class="navbar__links">About</a></li>
         <li class="navbar__btn"><a href="contact.html" class="button">Contact</a></li>
