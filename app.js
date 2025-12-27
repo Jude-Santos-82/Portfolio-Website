@@ -15,28 +15,28 @@ document.addEventListener('DOMContentLoaded', function() {
   // Arrays of captions for each carousel
   const captionsData = {
     '1': [
-      'Caption for image 1',
-      'Caption for image 2',
-      'Caption for image 3',
-      'Caption for image 4',
-      'Caption for image 5',
-      'Caption for image 6'
+      'Making my own 3D Cutting Boards',
+      'Welded a bird made of spoons and forks',
+      'Made a pencil holder as a gift',
+      'Made a cross country runner',
+      'Made two bookshelf ends of worms reading',
+      'Made 2 metal dice'
     ],
     '2': [
-      'Caption for image 7',
-      'Caption for image 8',
-      'Caption for image 9',
-      'Caption for image 10',
-      'Caption for image 11',
-      'Caption for image 12'
+      'Eagle Scout Project of making a 27 foot bridge from scratch',
+      'Making the bridge with friends',
+      'Going on a 53 mile, 5 day backpacking trip',
+      'Graduating to Eagle Scout',
+      'Creating a foam sled for my troop',
+      'Making a robot cosume for Halloween (Age 9)'
     ],
     '3': [
-      'Caption for image 13',
-      'Caption for image 14',
-      'Caption for image 15',
-      'Caption for image 16',
-      'Caption for image 17',
-      'Caption for image 18'
+      'Forging a metal hanger',
+      'Welding the spoon bird',
+      'Creating the 3d cutting boards',
+      'Cutting parts out for sled',
+      'Painting homemade oak picture frames',
+      'Winning the state championship for Valorant as a coach'
     ]
   };
   
