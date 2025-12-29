@@ -163,6 +163,71 @@
     #mobile-menu.is-active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
+    /* Projects Section - Index Page */
+  .projects {
+    padding: 50px 30px;
+    position: relative;
+    z-index: 1;
+    background: #141414;
+  }
+
+  .projects__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects__card {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .projects__card h2,
+  .projects__card p,
+  .projects__btn {
+    position: relative;
+  }
+
+  /* Ensure sections don't overlap */
+  .main,
+  .about,
+  .contact {
+    position: relative;
+    z-index: 1;
+    background-color: #141414;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* ... your existing 600px styles ... */
+
+  /* Projects fixes */
+  .projects {
+    padding: 40px 20px;
+    clear: both;
+  }
+
+  .projects h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects__card {
+    margin: 1rem 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 450px;
+  }
+
+  .projects__card h2 {
+    font-size: 1.3rem;
+  }
+
+  .projects__card p {
+    font-size: 0.9rem;
+  }
   }
   
   /* Hero Section */
